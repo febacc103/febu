@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+ <!-- As a link -->
+<nav class="navbar navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{%url 'home'%}">home</a>
+  </div>
+</nav>
+
+    <meta charset="UTF-8">
+    <title>febu</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<style>
+    body{
+         background-color:#eeeee4;
+         background-image:url("{%static 'images/j2.jpg'%}");
+         background-size:cover;
+
+
+    }
+    h1{
+    color:blue;
+    }
+    h4{
+    color:green;
+    }
+    h5{
+    color:black;
+    }
+
+
+</style>
+</head>
+<body>
+<h1 align="center">Job Detail</h1>
+
+
+<div class="container" align="center">
+<div class="card border-success mb-3" style="max-width: 28rem; height:28rem;" align="left">
+  <div class="card-header bg-transparent border-success"><h5>Company Name:{{job.company_name}}</h5></div>
+  <div class="card-body text-success">
+    <h5 class="card-title"><h5>Job title:{{job.job_title}}</h5></h5>
+          <p class="card-text"><h5>Job description</h5>:{{job.job_description}}
+      <h5>Experience:{{job.experience}}</h5>
+      <h5>Qualification:{{job.qualification}}</h5></p>
+
+       <p class="card-text"><h5>Job post on:{{job.job_post_on}}</h5></p>
+       <p class="card-text"><h5>Close date:{{job.close}}</h5></p>
+  </div>
+  <div class="card-footer bg-transparent border-success" style="background-color:green">
+  </div>
+</div>
+</div>
+
+
+
+
+
+</body>
+</html>

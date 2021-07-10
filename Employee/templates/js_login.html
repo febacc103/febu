@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+    <style>
+        body{
+        background-color:rgba(211,210,205,255);
+
+
+        }
+
+    </style>
+</head>
+<body>
+<h1 align="center">welcome Jobseeker<br> Login here!!! </h1>
+
+
+<div class="container" align="center">
+<form action="" method="post">
+    {% csrf_token %}
+    <input type="text" placeholder="username" name="username"><br><br>
+    <input type="password" placeholder="password" name="password"><br><br>
+    <input type="submit" value="login"> <a href="{%url 'js_reg'%}">Register</a>
+</form>
+</div>
+
+
+</body>
+</html>

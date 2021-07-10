@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        h1{
+        color:blue;
+        }
+        body{
+        background-color:#eeeee4;
+        }
+
+
+    </style>
+</head>
+<body>
+<h1 align="center">If you are JobSeeker Register here!!!! </h1>
+<div class="container" align="center">
+<form action="" method="post">
+    {%csrf_token%}
+    {{form.as_p}}
+    <input type="submit" value="register">
+
+</div>
+</form>
+</body>
+</html>
